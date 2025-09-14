@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakura-FAQ</title>
+     <!-- fav icon -->
+     <link rel="shortcut icon" href="asset/img/icon/shakura.svg">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+    <link rel="stylesheet" href="asset/css/magnific-popup.css">
+    <link rel="stylesheet" href="asset/css/slick.css">
+    <link rel="stylesheet" href="asset/css/slick-theme.css">
+    <link rel="stylesheet" href="asset/css/nice-select.css">
+    <link rel="stylesheet" href="asset/css/typography.css">
+    <link rel="stylesheet" href="asset/css/aos.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+</head>
+<body>
+    
+   <!-- preloader -->
+   <div id="preloader">
+
+    <div id="ctn-preloader" class="ctn-preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+            <div class="txt-loading">
+                <span data-text-preloader="S" class="letters-loading">S</span>
+                  <span data-text-preloader="H" class="letters-loading">H</span>
+                  <span data-text-preloader="A" class="letters-loading">A</span>
+                  <span data-text-preloader="K" class="letters-loading">K</span>
+                  <span data-text-preloader="U" class="letters-loading">U</span>
+                  <span data-text-preloader="R" class="letters-loading">R</span>
+                  <span data-text-preloader="A" class="letters-loading">A</span>
+            </div>
+        </div>
+
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- preloader end -->
+ 
+  <!-- Header Area Start-->
+ <!-- Header Area Start-->
+<header class="header-area-3 stiky">
+  <div class="container header-3">
+    <div class="row align-items-center">
+      <div class="col-xl-3 col-lg col-md-6 col-6">
+        <!-- ca-logo -->
+        <div class="ca-logo">
+          <a href="index.html">
+            <img src="asset/img/logo/shakura1.png" alt="" style="height:70px; width:auto; max-width:160px;">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7 d-none d-lg-block">
+        <!-- ca-main-menu -->
+        <div class="ca-main-menu-3">
+          <nav class="ca-mobile-menu-active-3">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg col-md-6 col-6">
+        <!-- ca-btn -->
+        <div class="ca-btn-header d-none d-lg-block text-end">
+          <button onclick="window.location.href='index.php'" class="ca-btn-primary-3 theme-bg-3 text-white br-50" style="border:none; background:none;">
+            Login<span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+        <div class="ca-header-action-item d-lg-none text-end">
+          <button type="button" class="ca-offcanvas-toogle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
+              <rect x="10" width="20" height="2" fill="currentColor"></rect>
+              <rect x="5" y="7" width="25" height="2" fill="currentColor"></rect>
+              <rect x="10" y="14" width="20" height="2" fill="currentColor"></rect>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Navbar Active Link Styling -->
+<style>
+/* Navbar: Set active link brown */
+.ca-main-menu-3 nav ul li a.active,
+.ca-main-menu-3 nav ul li a.active:visited {
+  color: #4b2e05 !important;
+  font-weight: 700;
+  background: none !important;
+  position: relative;
+}
+.ca-main-menu-3 nav ul li a.active::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+  height: 2.5px;
+  background: #4b2e05;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+.ca-main-menu-3 nav ul li a:hover,
+.ca-main-menu-3 nav ul li a:focus {
+  color: #b8860b !important; /* gold on hover */
+}
+</style>
+
+<!-- Navbar Auto-Active Script -->
+<script>
+// Automatically highlight nav link for current page
+document.addEventListener('DOMContentLoaded', function() {
+  var path = window.location.pathname.split("/").pop();
+  if(path === "" || path === "index-03.html") path = "faq.html"; // Support your custom homepage URL
+  document.querySelectorAll('.ca-main-menu-3 nav ul li a').forEach(function(link) {
+    // Match by filename only (strip query/hash)
+    var href = link.getAttribute('href').split('?')[0].split('#')[0];
+    if(href === path) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>
+
+ <!-- header area end -->
+    <!-- offcanvas start -->
+    <div class="ca-offcanvas w-bg">
+        <div class="ca-offcanvas-wrapper">
+            <div class="ca-offcanvas-header d-flex justify-content-between align-items-center mb-40">
+                <div class="ca-offcanvas-logo">
+                    <a href="#"><img src="asset/img/logo/ca-logo3.1.png" alt=""></a>
+                </div>
+                <div class="ca-offcanvas-close">
+                    <button class="ca-offcanvas-close-toggle"><i class="fal fa-times"></i></button>
+                </div>
+            </div>
+            <div class="ca-offcanvas-menu-3 mb-40">
+                <nav>
+                </nav>
+            </div>
+            <div class="ca-offcanvas-contact mb-40">
+            <a href="shakura.php" class="ca-btn-primary-3 theme-bg-3 text-white br-50">Get A Quote <span><i class="fa-solid fa-angle-right"></i></span></a>
+            </div>
+            <div class="ca-offcanvas-contact-info mb-40">
+                <h3 class="ca-offcanvas-sm-title">Contact Info</h3>
+                 <!-- single item -->
+                 <div class="ca-sm-single-item-4 ca-sm-single-item-1 mb-20">
+                    <div class="icon">
+                       <span>
+                          <i class="fa-solid fa-location-dot"></i>
+                       </span>
+                    </div>
+                    <div class="ca-sm-single-item-4-content">
+                       <p><a href="#">55 Street, 2nd block, 3rd Floor
+                          Melbourne, Australia</a></p>
+                    </div>
+                 </div>
+  
+                 <!-- single item -->
+                 <div class="ca-sm-single-item-4 ca-sm-single-item-1 mb-20">
+                    <div class="icon">
+                       <span>
+                          <i class="fa-solid fa-phone"></i>
+                       </span>
+                    </div>
+                    <div class="ca-sm-single-item-4-content">
+                       <p><a href="tel:+0221234568806">+022 (123) 456 88 06</a></p>
+                    </div>
+                 </div>
+  
+                 <!-- single item -->
+                 <div class="ca-sm-single-item-4 ca-sm-single-item-1 mb-20">
+                    <div class="icon">
+                       <span>
+                          <i class="fa-solid fa-envelope"></i>
+                       </span>
+                    </div>
+                    <div class="ca-sm-single-item-4-content">
+                       <p><a href="mailto:infocargon@gmail.com">infocargon@gmail.com</a></p>
+                    </div>
+                 </div>
+            </div>
+            <div class="ca-offcanvas-social mb-40">
+                <h3 class="ca-offcanvas-sm-title">Follow Us</h3>
+                <div class="ca-footer-social ca-footer-social-3">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="ca-offcanvas-overlay"></div>
+    <!-- offcanvas end -->
+
+   
+     <main>
+        <!-- breadcrumb area start -->
+         <section class="ca-breadcrumb-area cream-bg-3 p-relative z-index-1 fix">
+            <div class="ca-breadcrumb-shape p-absolute bre-sh-1">
+                <img src="asset/img/shape/breadcrumn-shape.png" alt="">
+            </div>
+            <div class="ca-breadcrumb-shape p-absolute bre-sh-2">
+                <img src="asset/img/shape/ca-line-shape.png" alt="">
+            </div>
+            <div class="container">
+                <div class="ca-breadcrumb-content text-center">
+                    <h2 class="ca-breadcrumb-title fnw-600">FAQ’s</h2>
+                    <div class="it-breadcum-link">
+                        <a href="index.html">Home</a>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                        <a class="active" href="#">FAQ’s</a>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- breadcrumb area end -->
+
+        <div class="ca-faq-inner pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-30">
+                        <div class="ca-faq-iner-thumb p-relative mr-65">
+                            <img class="w-100" src="asset/img/faq/1.jpg" alt="">
+                            <div class="ca-fa-sm-thumb">
+                                <img src="asset/img/faq/2.jpg" alt="">
+                            </div>
+
+                            <div class="ca-iner-review-text ca-faq-iner-review p-absolute theme-bg-3">
+                                <h3 class="ca-counter-title fnw-700 pb-16"><span class="counter">28</span>+</h3>
+                                <p>Years Of Experience</p>
+                                <div class="ca-test-3-rating ca-faq-rating">
+                                    <div class="ca-ratings-3">
+                                        <span class="fa fa-star checked star"></span>
+                                        <span class="fa fa-star checked star"></span>
+                                        <span class="fa fa-star checked star"></span>
+                                        <span class="fa fa-star checked star"></span>
+                                        <span class="fa fa-star checked star"></span>
+                                    </div>
+                                    <div class="ca-rating-num-3">
+                                        <h4 class="ca-rating-title-3">(5) <span class="rat-title">Rating</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-30">
+                        <div class="ca-about-content-3 ca-sec-content-3 mb-48">
+                            <h5 class="ca-section-subtitle subtitle-bg-6 p-relative theme-color-3 br-50">FAQ'S</h5>
+                            <h2 class="ca-section-title theme-black-3 fnw-600 pt-16 ca-text-cap">Frequently Asked Questions
+                                and Answers</h2>
+                        </div>
+                        <div class="ca-faq-accordion-one">
+                            <div class="accordion" id="accordionExample">
+                                <!-- single item -->
+                                <div class="ca-iner-one accordion-item">
+                                    <h2 class="accordion-header" id="heading2">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                          <span><i class="fa-solid fa-angle-down"></i></span> How does Shakura track shipments in real time?
+                                      </button>
+                                    </h2>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                          <p>We use integrated GPS and RFID technologies to monitor cargo locations and checkpoint status. You can view your shipment in real time on our customer portal</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <!-- single item -->
+                                <div class="ca-iner-one accordion-item">
+                                  <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                      <span><i class="fa-solid fa-angle-down"></i></span>  Can I get updates during the shipping process?
+                                    </button>
+                                  </h2>
+                                  <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <p>Yes. You’ll receive automatic status updates through SMS, email, and dashboard notifications at every major milestone or delay.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- single item -->
+                                <div class="ca-iner-one accordion-item">
+                                  <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        <span><i class="fa-solid fa-angle-down"></i></span> What makes your logistics system different?
+                                    </button>
+                                  </h2>
+                                  <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Our system automates delivery checkpoints, calculates accurate delivery quotes, and gives customers control through a secure tracking portal.</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- single item -->
+                                <div class="ca-iner-one accordion-item">
+                                    <h2 class="accordion-header" id="heading4">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        <span><i class="fa-solid fa-angle-down"></i></span> How do I access the tracking portal?
+                                      </button>
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <p>Customers and staff get unique login credentials to view shipment status, download history logs, and communicate with the logistics team directly.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="ca-faq-iner2 pt-100 pb-70">
+            <div class="container">
+                <div class="ca-about-content-3 ca-sec-content-3 text-center mb-60">
+                    <h5 class="ca-section-subtitle subtitle-bg-6 p-relative theme-color-3 br-50">FAQ'S</h5>
+                    <h2 class="ca-section-title theme-black-3 fnw-600 pt-16 ca-text-cap">Answers to Your Questions</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ca-faq-acc">
+                            <div class="ca-accordion" id="accordionExample1">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="accordion" id="accordionExample2">
+                                            
+                                            <!-- single acordion item -->
+                                            <div class="ca-iner-accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                      Do I need to call customer service to check shipment status?
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                                  <div class="accordion-body">
+                                                    <p>No. You can check your package location, route, and checkpoint logs 24/7 using our cloud-based tracking dashboard..</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <!-- single acordion item -->
+                                            <div class="ca-iner-accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    How does the RFID system help reduce delays?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+                                                <div class="accordion-body">
+                                                  <p>RFID tags automatically register packages at warehouse entry and exit points, preventing manual errors and ensuring timely updates.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+
+                                                <!-- single acordion item -->
+                                                <div class="ca-iner-accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                          Can I track deliveries to rural or remote areas?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                                        <div class="accordion-body">
+                                                        <p>Yes. Our GPS mapping covers urban and rural delivery zones across Kenya, Uganda, and Tanzania.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- single acordion item -->
+                                                <div class="ca-iner-accordion-item">
+                                                    <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        How secure is the customer portal?
+                                                    </button>
+                                                    </h2>
+                                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                                    <div class="accordion-body">
+                                                        <p>The portal is encrypted with SSL and access is role-based. Only authorized users (customer or staff) can view or update tracking data.</p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="col-lg-6">
+                                        <div class="accordion" id="accordionExample3">
+                                            <!-- single acordion item -->
+                                            <div class="ca-iner-accordion-item">
+                                                <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    Can I download proof of delivery?
+                                                </button>
+                                                </h2>
+                                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                                <div class="accordion-body">
+                                                    <p>Yes. Once a delivery is completed, signed proof of delivery is uploaded to your portal for download and reference.</p>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- single acordion item -->
+                                            <div class="ca-iner-accordion-item">
+                                                <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                   How do you handle international shipments?
+                                                </button>
+                                                </h2>
+                                                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                                <div class="accordion-body">
+                                                    <p>We offer end-to-end tracking from origin hubs in the Netherlands, China, UAE, US, and UK to East Africa, with customs status included in tracking.</p>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- single acordion item -->
+                                            <div class="ca-iner-accordion-item">
+                                                <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                   How do I request a shipping quote?
+                                                </button>
+                                                </h2>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                                <div class="accordion-body">
+                                                    <p>Use our instant online quotation tool. Input origin, destination, weight, and size — the system returns a price instantly.</p>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- single acordion item -->
+                                            <div class="ca-iner-accordion-item">
+                                                <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                                                    What happens if my shipment is delayed?
+                                                </button>
+                                                </h2>
+                                                <div id="collapseeight" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                                <div class="accordion-body">
+                                                    <p>Our system flags delays immediately and sends real-time alerts. A support agent will also reach out with revised delivery details.</p>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- single acordion item -->
+                                           
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- footer section start-->
+       <footer class="theme-bg-3 pt-30 p-relative z-index-1" style="background-color: #4b2e05 !important;">
+         <div class="ca-ft-shape p-absolute ft-shape-2"><img src="asset/img/shape/ca-footer-shape3.1.png" alt=""></div>
+         <div class="ca-cta-area p-relative z-index-1">
+         <div class="container">
+            <div class="ca-cta-shape3 p-absolute d-none d-lg-block">
+            <img src="asset/img/shape/cta-shape-3.1.png" alt="">
+            </div>
+            <div class="row align-items-center">
+            <div class="col-lg-6 mb-30">
+               <div class="ca-cta-content">
+               <h2 class="ca-section-title cta-title-1 text-white fnw-700">Partner with Shakura Reliable Freight for Global Growth</h2>
+               </div>
+            </div>
+            <div class="col-lg-6 mb-30">
+               <div class="ca-btn-cta-3 text-end">
+               <a href="contact.html" class="ca-btn-primary-3 w-bg">Get Started <span><i class="fa-solid fa-angle-right"></i></span></a>
+               </div>
+            </div>
+            </div>
+            <div class="b-bottom pt-48"></div>
+         </div>
+         </div>
+         <div class="ca-footer-area">
+         <div class="container">
+            <div class="ca-ft-area w-bg">
+            <div class="row">
+               <div class="col-xl-4 col-md-6 mb-30">
+               <div class="ca-footer widget-1">
+                  <div class="ca-ft-logo">
+                  <a href="index-03.html"><img src="asset/img/logo/shakura1.png" alt=""></a>
+                  </div>
+                  <div class="ca-ft-content ca-ft-content-3 mb-24">
+                  <p class="pt-16">With strategic hubs in the Europe, Dubai, China, the US, and the UK,<br> Shakura delivers dependable shipping solutions to Kenya, Uganda, Tanzania and beyond</p>
+                  </div>
+                  <div class="ca-footer-social ca-footer-social-3">
+                  <ul>
+                     <li><a href="#"><i class="fa-brands fa-instagram" style="color:#4b2e05;"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-facebook-f" style="color:#4b2e05;"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-linkedin-in" style="color:#4b2e05;"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-x-twitter" style="color:#4b2e05;"></i></a></li>
+                  </ul>
+                  </div>
+               </div>
+               </div>
+               <div class="col-xl col-md-6 mb-30">
+               <div class="ca-footer widget-2">
+                  <h4 class="ca-title fnw-700 theme-black-3 pb-24">Quick Links</h4>
+                  <div class="ca-footer-menu ca-footer-menu-3">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="service.html">Service</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                  </div>
+               </div>
+               </div>
+              
+               <div class="col-xl-4 col-md-6 mb-30">
+               <div class="ca-footer widget-4">
+                  <h4 class="ca-title fnw-700 theme-black-3 pb-24">Other Links</h4>
+                  
+                  <div class="ca-footer-email-sub ca-footer-email-sub-3">
+                  <form action="#">
+                     <input type="email" placeholder="Email Address..">
+                  </form>
+                  <button class="ca-btn-primary ca-btn-primary-3 theme-bg-3 text-white br-50" type="submit" value="submit">Subscribe for shipment updates & offers<span><i class="fa-solid fa-angle-right"></i></span></button>
+                  </div>
+               </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+               <div class="copy-right-border border-1"></div>
+               </div>
+               <div class="col-lg-6">
+               <p class="copry-right-text pt-24">Copyright &COPY;2025 Shakura Global. All Rights Reserved</p>
+               </div>
+               
+            </div>
+            </div>
+         </div>
+         </div>
+      </footer>
+      <style>
+        
+/* GOLD THEME OVERRIDES FOR FAQ PAGE */
+h1, h2, h3, h4, h5, h6,
+.ca-section-title, .ca-section-subtitle,
+.elegant-title, .ca-title,
+.cta-title-1, .theme-black-3,
+.cta-title-1.theme-black-3,
+.ca-section-title.theme-black-3 {
+  color: #4b2e05 !important;
+}
+/* Theme backgrounds & section accents */
+.theme-bg-3,
+.theme-black-bg-3 {
+  background-color: #b8860b !important;
+}
+.cream-bg-3 {
+  background: #fffbea !important;
+}
+.theme-black-3,
+.theme-black-3 *,
+.ca-title.theme-black-3,
+.ca-section-title.theme-black-3 {
+  color: #b8860b !important;
+}
+
+/* Subtitle, section label, breadcrumb */
+.subtitle-bg-6,
+.subtitle-bg-gold,
+.theme-color-3 {
+  background: #fff8e1 !important;
+  color: #b8860b !important;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 7px 18px;
+  display: inline-block;
+}
+
+/* Breadcrumb active link and arrow */
+.ca-breadcrumb-content .it-breadcum-link .active,
+.ca-breadcrumb-content .it-breadcum-link span,
+.ca-breadcrumb-content .it-breadcum-link i {
+  color: #b8860b !important;
+}
+
+/* GOLD BUTTONS */
+.ca-btn-primary-3,
+.ca-btn-primary,
+.ca-btn-primary-3.theme-bg-3,
+.ca-btn-primary.theme-bg-3,
+.ca-btn-primary-3.w-bg,
+.ca-footer-email-sub-3 .ca-btn-primary-3,
+.ca-btn-primary.ca-btn-primary-3.theme-bg-3 {
+  background: #b8860b !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 3px 18px #b8860b11;
+  transition: background .18s, color .18s, box-shadow .18s;
+}
+.ca-btn-primary-3:hover,
+.ca-btn-primary:hover {
+  background: #FFD700 !important;
+  color: #b8860b !important;
+}
+
+/* Accordion: question button arrow, active/hover/focus */
+.accordion-button:not(.collapsed) {
+  color: #b8860b !important;
+  background-color: #fff8e1 !important;
+  box-shadow: none !important;
+}
+.accordion-button:focus,
+.accordion-button:hover {
+  box-shadow: 0 0 0 2px #b8860b33 !important;
+  border-color: #b8860b !important;
+  color: #b8860b !important;
+}
+.accordion-button span,
+.accordion-button i,
+.accordion-header i,
+.accordion-header span {
+  color: #b8860b !important;
+  fill: #b8860b !important;
+}
+
+.accordion-button {
+  color: #b8860b !important;
+  font-weight: 600;
+}
+.accordion-button.collapsed {
+  background: #fff;
+  color: #b8860b !important;
+}
+
+/* Accordion number/label gold */
+.ca-num h4,
+.overly-num,
+.overly-num2 {
+  color: #b8860b !important;
+}
+
+/* Heading gold */
+.ca-section-title,
+.ca-section-title.theme-black-3,
+.ca-section-title.fnw-700,
+h2.ca-section-title,
+h4.ca-title,
+h4.ca-title.fnw-700 {
+  color: #b8860b !important;
+}
+
+/* FAQ star ratings in gold */
+.star,
+.fa-star.checked {
+  color: #b8860b !important;
+}
+
+/* Social icons, all icons, SVG arrows in gold */
+svg, .fa-solid, .fa-brands, .fa, .fa-angle-right,
+.ca-offcanvas-close-toggle {
+  color: #b8860b !important;
+  fill: #b8860b !important;
+}
+
+/* Footer menu, footer links, hover */
+.ca-footer-menu-3 a:hover,
+.ca-footer-menu-3 a:focus,
+.ca-footer-social-3 a:hover,
+.ca-footer-social-3 a:focus {
+  color: #b8860b !important;
+}
+
+/* Checkbox/radio gold for forms */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #b8860b !important;
+  border-color: #b8860b !important;
+}
+
+/* Remove blue focus border */
+.ca-btn-primary-3:focus,
+.ca-btn-primary-3:active,
+.ca-btn-primary:focus,
+.ca-btn-primary:active {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #b8860b44 !important;
+  border: none !important;
+}
+
+/* Review text/box gold background */
+.ca-iner-review-text,
+.ca-faq-iner-review {
+  background-color: #b8860b !important;
+  color: #fff !important;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Team and special accent text, if used */
+.text-gold { color: #b8860b !important; }
+.fw-semibold { font-weight: 600 !important; }
+.fw-bold { font-weight: 700 !important; }
+
+
+.ca-ft-area.w-bg {
+    background: #fff7cc !important;
+}
+</style>
+
+      </style>
+     <!-- footer section end-->
+
+<button id="topBtn3"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+
+
+       <!-- js file -->
+       <script src="asset/js/jquery-3.7.1.min.js"></script>
+       <script src="asset/js/bootstrap.bundle.min.js"></script>
+       <script src="asset/js/jquery.magnific-popup.min.js"></script>
+       <script src="asset/js/jquery.counterup.min.js"></script>
+       <script src="asset/js/slick.min.js"></script>
+       <script src="asset/js/jquery.nice-select.js"></script>
+       <script src="asset/js/waypoints.min.js"></script>
+       <script src="asset/js/aos.js"></script>
+       <script src="asset/js/main.js"></script>
+</body>
+</html>

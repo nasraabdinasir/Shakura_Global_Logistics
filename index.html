@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Shakura Global Express</title>
+      <!-- fav icon -->
+      <link rel="shortcut icon" href="asset/img/icon/shakura.svg">
+      <!-- css file -->
+      <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+      <link rel="stylesheet" href="asset/css/all.css">
+      <link rel="stylesheet" href="asset/css/magnific-popup.css">
+      <link rel="stylesheet" href="asset/css/slick.css">
+      <link rel="stylesheet" href="asset/css/slick-theme.css">
+      <link rel="stylesheet" href="asset/css/nice-select.css">
+      <link rel="stylesheet" href="asset/css/typography.css">
+      <link rel="stylesheet" href="asset/css/aos.css">
+      <link rel="stylesheet" href="asset/css/style.css">
+      <link rel="stylesheet" href="asset/css/responsive.css">
+   </head>
+   <body>  
+      <!-- preloader -->
+      <div id="preloader">   
+         <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+               <div class="spinner"></div>
+               <div class="txt-loading">
+                  <span data-text-preloader="S" class="letters-loading">S</span>
+                  <span data-text-preloader="H" class="letters-loading">H</span>
+                  <span data-text-preloader="A" class="letters-loading">A</span>
+                  <span data-text-preloader="K" class="letters-loading">K</span>
+                  <span data-text-preloader="U" class="letters-loading">U</span>
+                  <span data-text-preloader="R" class="letters-loading">R</span>
+                  <span data-text-preloader="A" class="letters-loading">A</span>
+               </div>
+            </div>
+            <div class="loader">
+               <div class="row">
+                  <div class="col-3 loader-section section-left">
+                     <div class="bg"></div>
+                  </div>
+                  <div class="col-3 loader-section section-left">
+                     <div class="bg"></div>
+                  </div>
+                  <div class="col-3 loader-section section-right">
+                     <div class="bg"></div>
+                  </div>
+                  <div class="col-3 loader-section section-right">
+                     <div class="bg"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- preloader end -->  
+
+      <!-- Header Area Start-->
+     <!-- Header Area Start-->
+<header class="header-area-3 stiky">
+  <div class="container header-3">
+    <div class="row align-items-center">
+      <div class="col-xl-3 col-lg col-md-6 col-6">
+        <!-- ca-logo -->
+        <div class="ca-logo">
+          <a href="index.html">
+            <img src="asset/img/logo/shakura1.png" alt="" style="height:70px; width:auto; max-width:160px;">
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7 d-none d-lg-block">
+        <!-- ca-main-menu -->
+        <div class="ca-main-menu-3">
+          <nav class="ca-mobile-menu-active-3">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg col-md-6 col-6">
+        <!-- ca-btn -->
+        <div class="ca-btn-header d-none d-lg-block text-end">
+          <button onclick="window.location.href='index.php'" class="ca-btn-primary-3 theme-bg-3 text-white br-50" style="border:none; background:none;">
+            Login<span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+        <div class="ca-header-action-item d-lg-none text-end">
+          <button type="button" class="ca-offcanvas-toogle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16">
+              <rect x="10" width="20" height="2" fill="currentColor"></rect>
+              <rect x="5" y="7" width="25" height="2" fill="currentColor"></rect>
+              <rect x="10" y="14" width="20" height="2" fill="currentColor"></rect>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Navbar Active Link Styling -->
+<style>
+/* Navbar: Set active link brown */
+.ca-main-menu-3 nav ul li a.active,
+.ca-main-menu-3 nav ul li a.active:visited {
+  color: #4b2e05 !important;
+  font-weight: 700;
+  background: none !important;
+  position: relative;
+}
+.ca-main-menu-3 nav ul li a.active::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+  height: 2.5px;
+  background: #4b2e05;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+.ca-main-menu-3 nav ul li a:hover,
+.ca-main-menu-3 nav ul li a:focus {
+  color: #b8860b !important; /* gold on hover */
+}
+</style>
+
+<!-- Navbar Auto-Active Script -->
+<script>
+// Automatically highlight nav link for current page
+document.addEventListener('DOMContentLoaded', function() {
+  var path = window.location.pathname.split("/").pop();
+  if(path === "" || path === "index-03.html") path = "index.html"; // Support your custom homepage URL
+  document.querySelectorAll('.ca-main-menu-3 nav ul li a').forEach(function(link) {
+    // Match by filename only (strip query/hash)
+    var href = link.getAttribute('href').split('?')[0].split('#')[0];
+    if(href === path) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>
+
+      <!-- offcanvas start -->
+      <div class="ca-offcanvas w-bg">
+         <div class="ca-offcanvas-wrapper">
+            <div class="ca-offcanvas-header d-flex justify-content-between align-items-center mb-40">
+               <div class="ca-offcanvas-logo">
+                  <a href="#"><img src="asset/img/logo/ca-logo3.1.png" alt=""></a>
+               </div>
+               <div class="ca-offcanvas-close">
+                  <button class="ca-offcanvas-close-toggle"><i class="fal fa-times"></i></button>
+               </div>
+            </div>
+            <div class="ca-offcanvas-menu-3 mb-40">
+               <nav>
+               </nav>
+            </div>
+            <div class="ca-offcanvas-contact mb-40">
+               <a href="#" class="ca-btn-primary-3 theme-bg-3 text-white br-50">Login <span><i class="fa-solid fa-angle-right"></i></span></a>
+            </div>
+            <div class="ca-offcanvas-contact-info mb-40">
+               <h3 class="ca-offcanvas-sm-title">Contact Info</h3>
+                 <!-- single item -->
+                 <div class="ca-sm-single-item-4 ca-sm-single-item-1 mb-20">
+                  <div class="icon">
+                     <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </span>
+                  </div>
+                  <div class="ca-sm-single-item-4-content">
+                     <p><a href="#">55 Street, 2nd block, 3rd Floor
+                        Melbourne, Australia</a></p>
+                  </div>
+               </div>
+
+               <!-- single item -->
+               <div class="ca-sm-single-item-4 ca-sm-single-item-1 mb-20">
+                  <div class="icon">
+                     <span>
+                        <i class="fa-solid fa-phone"></i>
+                     </span>
+                  </div>
+                  <div class="ca-sm-single-item-4-content">
+                     <p><a href="tel:+0221234568806">+022 (123) 456 88 06</a></p>
+                  </div>
+               </div>
+
+               <!-- single item -->
+               <div class="ca-sm-single-item-4 ca-sm-single-item-1 mb-20">
+                  <div class="icon">
+                     <span>
+                        <i class="fa-solid fa-envelope"></i>
+                     </span>
+                  </div>
+                  <div class="ca-sm-single-item-4-content">
+                     <p><a href="mailto:infocargon@gmail.com">infocargon@gmail.com</a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="ca-offcanvas-social mb-40">
+               <h3 class="ca-offcanvas-sm-title">Follow Us</h3>
+               <div class="ca-footer-social ca-footer-social-3">
+                  <ul>
+                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="ca-offcanvas-overlay"></div>
+      <!-- offcanvas end -->
+     
+      <main>
+         <!-- slider start -->
+      <!-- Include Owl Carousel or Slick CSS/JS as needed -->
+
+<div class="ca-slider-active-3 owl-carousel owl-theme">
+    <!-- Air Freight Slide -->
+    <div class="ca-slider-3 goldwhite-bg p-relative z-index-1 fix">
+        <div class="ca-slider-img-3 p-absolute">
+            <img src="asset/img/slider/air2.jpg" alt="Air Freight">
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-6 col-md-10">
+                    <div class="ca-hero-content-3">
+                        <h5 class="ca-section-subtitle subtitle-bg-gold p-relative text-gold br-50" style="font-size:1.45rem; ">Fast, Secure Air Freight for Global Reach</h5>
+                        <p class="pt-16 pb-32 text-dark" style="font-size:1.32rem; font-weight:600; color:#fff;">Shakura Global Express offers reliable international air cargo services with real-time tracking, fast customs clearance, and on-time delivery across the globe.</p>
+                        <div class="hero3-btn">
+                           <a href="quote.php" class="ca-btn-primary-3" style="background:#b8860b !important; color:#fff !important; border-radius:50px; border:none;">Get A Quote<span><i class="fa-solid fa-angle-right"></i></span></a>
+                           <a href="track.php" class="ca-btn-primary-3" style="background:#b8860b !important; color:#fff !important; border-radius:50px; border:none;">Track Your Shipment<span><i class="fa-solid fa-angle-right"></i></span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sea Freight Slide -->
+    <div class="ca-slider-3 goldwhite-bg p-relative z-index-1 fix">
+        <div class="ca-slider-img-3 p-absolute">
+            <img src="asset/img/slider/1.jpg" alt="Sea Freight" style="max-height:350px;">
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-6 col-md-10">
+                    <div class="ca-hero-content-3">
+                        <h5 class="ca-section-subtitle subtitle-bg-gold p-relative text-gold br-50" style="font-size:1.45rem;">Scalable Sea Freight Built for Large Volumes</h5>
+                        <p class="pt-16 pb-32 text-dark" style="font-size:1.32rem; font-weight:600; color:#fff;">Move goods affordably and efficiently through our streamlined marine logistics network. Ideal for bulk shipments and international supply chains.</p>
+                        <div class="hero3-btn">
+                            <a href="quote.php" class="ca-btn-primary-3 bg-gold text-white br-50">Get A Quote<span><i class="fa-solid fa-angle-right"></i></span></a>
+                            <a href="track.php" class="ca-sec-primary-3 text-gold border-gold br-50">Track Your Shipment<span><i class="fa-solid fa-angle-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Road Freight Slide -->
+    <div class="ca-slider-3 goldwhite-bg p-relative z-index-1 fix">
+        <div class="ca-slider-img-3 p-absolute">
+            <img src="asset/img/slider/truck.jpg" alt="Road Freight" style="max-height:350px;">
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-6 col-md-10">
+                    <div class="ca-hero-content-3">
+                        <h5 class="ca-section-subtitle subtitle-bg-gold p-relative text-gold br-50" style="font-size:1.45rem; ">Reliable Road Freight for Regional Deliveries</h5>
+                        <p class="pt-16 pb-32 text-dark" style="font-size:1.32rem; font-weight:600; color:#fff;">Our fleet ensures smooth and timely deliveries across East Africa and beyond, supported by GPS tracking and professional drivers.</p>
+                        <div class="hero3-btn">
+                            <a href="quote.php" class="ca-btn-primary-3 bg-gold text-white br-50">Get A Quote<span><i class="fa-solid fa-angle-right"></i></span></a>
+                            <a href="track.php" class="ca-sec-primary-3 text-gold border-gold br-50">Track Your Shipment<span><i class="fa-solid fa-angle-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+   
+const prices = {
+  "USA":      { "Kenya": 12, "Tanzania": 16, "Uganda": 14 },
+  "UK":       { "Kenya": 9,  "Tanzania": 13, "Uganda": 11 },
+  "China":    { "Kenya": 13, "Tanzania": 17, "Uganda": 15 },
+  "Dubai":    { "Kenya": 7,  "Tanzania": 11, "Uganda": 9  },
+  "Netherlands": { "Kenya": 11, "Tanzania": 15, "Uganda": 13 },
+};
+
+function updatePricePerKg() {
+  const origin = document.getElementById('origin').value;
+  const dest = document.getElementById('destination').value;
+  const field = document.getElementById('pricePerKg');
+  if (origin && dest && prices[origin] && prices[origin][dest]) {
+    field.value = "$" + prices[origin][dest] + " per kg";
+  } else {
+    field.value = "";
+  }
+}
+
+document.getElementById('origin').addEventListener('change', updatePricePerKg);
+document.getElementById('destination').addEventListener('change', updatePricePerKg);
+
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  // Fetch input values
+  const origin = document.getElementById('origin').value;
+  const dest = document.getElementById('destination').value;
+  if (!(origin && dest && prices[origin] && prices[origin][dest])) {
+    alert("Please select valid origin and destination.");
+    return;
+  }
+  const pricePerKg = prices[origin][dest];
+  const actualWeight = parseFloat(document.getElementById('actualWeight').value);
+  const length = parseFloat(document.getElementById('length').value);
+  const width  = parseFloat(document.getElementById('width').value);
+  const height = parseFloat(document.getElementById('height').value);
+  const fragile = document.getElementById('fragile').value;
+
+  // Volumetric Weight
+  const volWeight = ((length * width * height) / 6000).toFixed(2);
+  const chargeableWeight = Math.max(actualWeight, volWeight).toFixed(2);
+
+  // Final Price
+  let finalPrice = (chargeableWeight * pricePerKg);
+  if (fragile === 'Yes') finalPrice += 100;
+
+  // Output
+  document.getElementById('finalPrice').innerHTML = "$" + finalPrice.toFixed(2);
+  document.getElementById('chargeableWeight').innerHTML = chargeableWeight;
+  document.getElementById('volWeightDetail').innerHTML = `Volumetric Weight: ${volWeight} kg (${length}×${width}×${height} cm / 6000)`;
+  document.getElementById('quoteResult').style.display = 'block';
+});
+
+   $('.ca-slider-active-3').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1200,
+    nav: true,
+    dots: false,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    margin: 0,
+    responsive: {
+        0: { items: 1 }
+    }
+});
+
+</script>
+         <!-- slider end -->
+
+       <!-- ELEGANT ABOUT SECTION -->
+<section class="elegant-section goldwhite-bg py-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="elegant-card wow fadeInUp">
+          <div class="section-icon mb-3">
+            <i class="fa-solid fa-globe-africa"></i>
+          </div>
+          <h2 class="elegant-title">Connecting the World to East Africa</h2>
+          <div class="elegant-divider"></div>
+          <p class="elegant-text mb-4">
+            Shakura Global Express is a dynamic logistics and shipping company that specializes in connecting global markets to East Africa.<br>
+            We facilitate the seamless transport of goods from major international hubs including the USA, UK, Europe, Dubai, and China directly to East African countries.<br>
+            With a commitment to reliability, speed, and client satisfaction, we provide tailored freight solutions that meet the demands of today’s global trade environment.
+          </p>
+          <a href="about.html" class="elegant-btn">
+            Learn More About Us
+            <span class="btn-arrow"><i class="fa-solid fa-angle-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELEGANT MISSION SECTION -->
+<section class="elegant-section goldwhite-bg py-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="elegant-card wow fadeInUp">
+          <div class="section-icon mb-3">
+            <i class="fa-solid fa-bullseye-arrow"></i>
+          </div>
+          <h2 class="elegant-title">Our Mission</h2>
+          <div class="elegant-divider"></div>
+          <p class="elegant-text mb-4">
+            To deliver efficient, transparent, and technology-driven logistics services that empower businesses across borders, one shipment at a time.
+          </p>
+          <a href="service.html" class="elegant-btn">
+            Explore Our Services
+            <span class="btn-arrow"><i class="fa-solid fa-angle-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+         <!-- working section start -->
+        <div class="ca-working-section theme-black-bg-3 pt-120 pb-40">
+          <div class="container">
+            <div class="ca-working-section-3 ca-sec-content-3 text-center mb-40 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+              <br>
+              <br>
+              <h5 class="ca-section-subtitle subtitle-bg-7 p-relative" style="color:#4b2e05; background:#fff;">Working Process</h5>
+              <h2 class="ca-section-title theme-black-3 fnw-600 text-white pt-16">Our Logistics Process From Order to Delivery</h2>
+              <p class="pt-16"> At Shakura Global Express, our operations are streamlined to ensure smooth, dependable, and customized logistics. <br>From the initial request to final delivery, every step is planned for speed, accuracy, and reliability.</p>
+            </div>
+               <div class="row">
+                  <!-- working icon box -->
+                  <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
+                     <div class="ca-work-ic-box br-7 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+                        <div class="ca-work-ic-box-img">
+                           <span>
+                           <img src="asset/img/icon/ca-work-1.1.svg" alt="">
+                           </span>
+                        </div>
+                        <div class="ca-work-ic-box-content">
+                           <h4 class="ca-title fnw-600 text-white pt-24 pb-16"><a href="#">Step 1: Order & Requirements Capture</a></h4>
+                           <p>Shipment begins when the customer places<br> an order and Shakura staff collect key <br>information about the package, destination, and client preferences.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- working icon box -->
+                  <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
+                     <div class="ca-work-ic-box br-7 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="ca-work-ic-box-img">
+                           <span>
+                           <img src="asset/img/icon/ca-work-1.2.svg" alt="">
+                           </span>
+                        </div>
+                        <div class="ca-work-ic-box-content">
+                           <h4 class="ca-title fnw-600 text-white pt-24 pb-16"><a href="#">Step 2: Real-Time Tracking Initialization</a></h4>
+                           <p>The package is tagged using GPS and RFID systems.<br> These enable constant visibility from the point of dispatch, with updates automatically logged at each checkpoint.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- working icon box -->
+                  <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
+                     <div class="ca-work-ic-box br-7 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="ca-work-ic-box-img">
+                           <span>
+                           <img src="asset/img/icon/ca-work1.3.svg" alt="">
+                           </span>
+                        </div>
+                        <div class="ca-work-ic-box-content">
+                           <h4 class="ca-title fnw-600 text-white pt-24 pb-16"><a href="#">Step 3: Smart Processing & Routing</a></h4>
+                           <p>Shipment data is processed through our cloud-powered system to calculate the most efficient route. This minimizes delays and adapts dynamically to traffic or customs bottlenecks.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- working icon box -->
+                  <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
+                     <div class="ca-work-ic-box br-7 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="ca-work-ic-box-img">
+                           <span>
+                           <img src="asset/img/icon/ca-work1.4.svg" alt="">
+                           </span>
+                        </div>
+                        <div class="ca-work-ic-box-content">
+                           <h4 class="ca-title fnw-600 text-white pt-24 pb-16"><a href="#">Step 4: Secure Delivery & Notifications</a></h4>
+                           <p>Packages are delivered securely to their final destination. Customers receive real-time updates and confirmations through the online portal or SMS/email alerts.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- working section End -->
+
+       
+       
+
+      
+      </main>
+      <!-- footer section start-->
+      <footer class="theme-bg-3 pt-30 p-relative z-index-1" style="background-color: #4b2e05 !important;">
+         <div class="ca-ft-shape p-absolute ft-shape-2"><img src="asset/img/shape/ca-footer-shape3.1.png" alt=""></div>
+         <div class="ca-cta-area p-relative z-index-1">
+         <div class="container">
+            <div class="ca-cta-shape3 p-absolute d-none d-lg-block">
+            <img src="asset/img/shape/cta-shape-3.1.png" alt="">
+            </div>
+            <div class="row align-items-center">
+            <div class="col-lg-6 mb-30">
+              <div class="ca-cta-content">
+                <h2 class="ca-section-title cta-title-1 fnw-700" style="color:#b8860b !important;">
+                  Partner with Shakura Reliable Freight for Global Growth
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-30">
+               <div class="ca-btn-cta-3 text-end">
+               <a href="contact.html" class="ca-btn-primary-3 w-bg">Get Started <span><i class="fa-solid fa-angle-right"></i></span></a>
+               </div>
+            </div>
+            </div>
+            <div class="b-bottom pt-48"></div>
+         </div>
+         </div>
+         <div class="ca-footer-area">
+         <div class="container">
+            <div class="ca-ft-area w-bg">
+            <div class="row">
+               <div class="col-xl-4 col-md-6 mb-30">
+               <div class="ca-footer widget-1">
+                  <div class="ca-ft-logo">
+                  <a href="index-03.html"><img src="asset/img/logo/shakura1.png" alt=""></a>
+                  </div>
+                  <div class="ca-ft-content ca-ft-content-3 mb-24">
+                  <p class="pt-16">With strategic hubs in the Europe, Dubai, China, the US, and the UK,<br> Shakura delivers dependable shipping solutions to Kenya, Uganda, Tanzania and beyond</p>
+                  </div>
+                  <div class="ca-footer-social ca-footer-social-3">
+                  <ul>
+                     <li><a href="#"><i class="fa-brands fa-instagram" style="color:#4b2e05;"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-facebook-f" style="color:#4b2e05;"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-linkedin-in" style="color:#4b2e05;"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-x-twitter" style="color:#4b2e05;"></i></a></li>
+                  </ul>
+                  </div>
+               </div>
+               </div>
+               <div class="col-xl col-md-6 mb-30">
+               <div class="ca-footer widget-2">
+                  <h4 class="ca-title fnw-700 theme-black-3 pb-24">Quick Links</h4>
+                  <div class="ca-footer-menu ca-footer-menu-3">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="service.html">Service</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                  </div>
+               </div>
+               </div>
+              
+               <div class="col-xl-4 col-md-6 mb-30">
+               <div class="ca-footer widget-4">
+                  <h4 class="ca-title fnw-700 theme-black-3 pb-24">Other Links</h4>
+                  
+                  <div class="ca-footer-email-sub ca-footer-email-sub-3">
+                  <form action="#">
+                     <input type="email" placeholder="Email Address..">
+                  </form>
+                  <button class="ca-btn-primary ca-btn-primary-3 theme-bg-3 text-white br-50" type="submit" value="submit">Subscribe for shipment updates & offers<span><i class="fa-solid fa-angle-right"></i></span></button>
+                  </div>
+               </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+               <div class="copy-right-border border-1"></div>
+               </div>
+               <div class="col-lg-6">
+               <p class="copry-right-text pt-24">Copyright &COPY;2025 Shakura Global. All Rights Reserved</p>
+               </div>
+               
+            </div>
+            </div>
+         </div>
+         </div>
+      </footer>
+
+
+      
+<style>
+   /* Put these in your <style> tag or main CSS file */
+
+/* --- Titles and Headings: force dark brown (#4b2e05) --- */
+h1, h2, h3, h4, h5, h6,
+.ca-section-title, .ca-section-subtitle,
+.elegant-title, .ca-title,
+.cta-title-1, .theme-black-3,
+.cta-title-1.theme-black-3,
+.ca-section-title.theme-black-3 {
+  color: #4b2e05 !important;
+}
+
+/* Remove Slick or Owl Carousel Dots (Slick uses .slick-dots, Owl uses .owl-dots) */
+.slick-dots, .owl-dots {
+  display: none !important;
+}
+
+/* Make sure slider nav arrows remain if you use them */
+.slick-arrow, .owl-nav {
+  display: block !important;
+}
+
+/* Gold and white theme - No blue at all */
+/* Slider Container Fullscreen */
+.ca-slider-active-3,
+.ca-slider-3 {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slider Images: Fullscreen and Behind Content */
+.ca-slider-img-3 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.ca-slider-img-3 img {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Overlay the content on top of image */
+.ca-slider-3 .container,
+.ca-slider-3 .row,
+.ca-hero-content-3 {
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: add a semi-transparent gold overlay for readability */
+.ca-slider-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #fff4 30%, #FFD70066 90%);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.65;
+}
+
+/* Buttons: Full Gold theme, no blue on hover */
+.ca-btn-primary-3,
+.ca-sec-primary-3 {
+    background: #b8860b !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 50px;
+    padding: 12px 36px;
+    font-weight: 600;
+    font-size: 1.12rem;
+    margin-right: 10px;
+    box-shadow: 0 3px 18px #b8860b11;
+    transition: background .18s, color .18s, box-shadow .18s;
+    display: inline-block;
+}
+.ca-btn-primary-3:hover,
+.ca-sec-primary-3:hover {
+    background: #FFD700 !important;
+    color: #b8860b !important;
+    box-shadow: 0 6px 32px #ffd70044;
+}
+
+/* Remove borders and blue/white for .ca-sec-primary-3 on hover */
+.ca-sec-primary-3 {
+    background: #b8860b !important;
+    color: #fff !important;
+    border: none !important;
+}
+.ca-sec-primary-3:hover {
+    background: #FFD700 !important;
+    color: #b8860b !important;
+}
+
+/* Button icon spacing */
+.ca-btn-primary-3 span,
+.ca-sec-primary-3 span {
+    margin-left: 10px;
+}
+
+/* Subtitle Style */
+.ca-section-subtitle.subtitle-bg-gold {
+    background: #fff8e1;
+    color: #b8860b;
+    padding: 10px 26px;
+    display: inline-block;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+/* Responsive content: Center on mobile */
+@media (max-width: 991px) {
+    .ca-slider-img-3 img { min-height: 350px; height: 60vh; }
+    .ca-slider-3 .container { padding-top: 60px; padding-bottom: 60px; }
+    .ca-hero-content-3 { text-align: center; }
+}
+@media (max-width: 600px) {
+    .ca-slider-img-3 img { min-height: 180px; height: 42vh; }
+    .ca-slider-3 .container { padding-top: 25px; padding-bottom: 25px; }
+}
+/* Gold & White Gradient BG with Glow */
+.goldwhite-bg {
+  background: radial-gradient(circle at 60% 20%, #ffe06622 0%, #fff 80%);
+  position: relative;
+  z-index: 1;
+}
+
+.elegant-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Card Design */
+.elegant-card {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 6px 32px 0 #ffd70029, 0 1.5px 8px #b8860b22;
+  padding: 56px 40px 48px 40px;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  transition: box-shadow 0.3s;
+}
+.elegant-card:hover {
+  box-shadow: 0 16px 48px #ffd7003a, 0 2px 16px #b8860b26;
+}
+
+/* Section Icon */
+.section-icon {
+  font-size: 2.7rem;
+  color: #b8860b;
+  margin-bottom: 8px;
+  opacity: 0.95;
+}
+
+/* Elegant Title */
+.elegant-title {
+  color: #b8860b;
+  font-weight: 700;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+}
+
+/* Animated Gold Divider */
+.elegant-divider {
+  width: 72px;
+  height: 4px;
+  margin: 18px auto 30px auto;
+  background: linear-gradient(90deg,#ffd700,#fff8e1,#ffd700);
+  border-radius: 3px;
+  opacity: 0.9;
+  animation: divider-grow 1.4s cubic-bezier(.4,2,.3,1) both;
+}
+@keyframes divider-grow {
+  from { width: 0; opacity: 0.1;}
+  to { width: 72px; opacity: 0.9;}
+}
+
+/* Section Text */
+.elegant-text {
+  color: #222;
+  font-size: 1.18rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+/* Button Style */
+.elegant-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #b8860b;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 13px 38px 13px 30px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 16px #ffd70033;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.15s, color 0.15s, box-shadow 0.25s;
+}
+.elegant-btn .btn-arrow {
+  display: inline-block;
+  margin-left: 12px;
+  transition: transform 0.23s cubic-bezier(.4,2,.3,1);
+}
+.elegant-btn:hover {
+  background: #ffd700;
+  color: #b8860b;
+  box-shadow: 0 4px 24px #b8860b33;
+}
+.elegant-btn:hover .btn-arrow {
+  transform: translateX(7px);
+  color: #b8860b;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .elegant-card { padding: 32px 16px 32px 16px; }
+  .elegant-title { font-size: 1.5rem; }
+  .section-icon { font-size: 2rem; }
+}
+@media (max-width: 575px) {
+  .elegant-section { padding-top: 60px; padding-bottom: 60px; }
+}
+
+
+/* REMOVE ALL BLUE: For classes used elsewhere that reference blue, force override here. */
+.theme-bg-3,
+.theme-black-bg-3 {
+  background-color: #b8860b !important;
+}
+.theme-black-3,
+.theme-black-3 *,
+.ca-title.theme-black-3,
+h4.theme-black-3,
+h2.theme-black-3,
+.ca-section-title.theme-black-3,
+.cta-title-1.theme-black-3 {
+  color: #b8860b !important;
+}
+.ca-btn-primary-3.w-bg {
+  background: #b8860b !important;
+  color: #fff !important;
+}
+.ca-btn-primary-3.theme-bg-3 {
+  background: #b8860b !important;
+  color: #fff !important;
+}
+.ca-btn-primary.theme-bg-3 {
+  background: #b8860b !important;
+  color: #fff !important;
+}
+
+/* Remove traces of blue border on focus or active */
+.ca-btn-primary-3:focus,
+.ca-btn-primary-3:active,
+.ca-sec-primary-3:focus,
+.ca-sec-primary-3:active,
+.elegant-btn:focus,
+.elegant-btn:active {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #b8860b44 !important;
+  border: none !important;
+}
+
+/* .ca-footer-menu-3 a:hover,
+.ca-footer-menu-3 a:focus {
+  color: #b8860b !important;
+}
+.ca-footer-social-3 a:hover,
+.ca-footer-social-3 a:focus {
+  color: #b8860b !important;
+} */
+
+/* For any svg or icons previously blue */
+svg, .fa-solid, .fa-brands, .fa, .fa-angle-right {
+  color: #b8860b !important;
+  fill: #b8860b !important;
+}
+
+.ca-offcanvas-close-toggle,
+.ca-offcanvas-close-toggle:focus,
+.ca-offcanvas-close-toggle:active {
+  color: #b8860b !important;
+}
+
+/* Remove blue from other UI elements, eg. checkboxes/radios if any (optional) */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #b8860b !important;
+  border-color: #b8860b !important;
+}
+
+
+.ca-ft-area.w-bg {
+    background: #fff7cc !important;
+}
+
+</style>
+
+
+      <!-- footer section end-->
+      <button id="topBtn3"><i class="fa-solid fa-arrow-up"></i></button>
+      <!-- js file -->
+      <script src="asset/js/jquery-3.7.1.min.js"></script>
+      <script src="asset/js/bootstrap.bundle.min.js"></script>
+      <script src="asset/js/jquery.magnific-popup.min.js"></script>
+      <script src="asset/js/jquery.counterup.min.js"></script>
+      <script src="asset/js/slick.min.js"></script>
+      <script src="asset/js/jquery.nice-select.js"></script>
+      <script src="asset/js/waypoints.min.js"></script>
+      <script src="asset/js/aos.js"></script>
+      <script src="asset/js/main.js"></script>
+   </body>
+</html>
